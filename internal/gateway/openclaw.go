@@ -225,8 +225,8 @@ func (oc *OpenClaw) Connect(ctx context.Context) error {
 		ID:     oc.nextID(),
 		Method: "connect",
 		Params: connectParams{
-			MinProtocol: 2,
-			MaxProtocol: 2,
+			MinProtocol: 3,
+			MaxProtocol: 3,
 			Client: clientInfo{
 				ID:          "gateway-client",
 				DisplayName: "Kapso WhatsApp Bridge",
